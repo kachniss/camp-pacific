@@ -1,5 +1,50 @@
-@bodyBackground: grey;
+/* 
+vars
+*/
 
-body {
+@content_width: 450px;
+@base_space_unit: 1.5rem;
+
+
+@bodyBackground: white;
+@text_color_ligth: white;
+@bg_color_dark: #0a0a0f;
+
+/*
+components
+*/
+
+.content, header {   
+    margin: auto;
+    max-width: @content_width;
+    padding: @base_space_unit;
+}
+
+.content {
     background: @bodyBackground;
+}
+
+h3 {
+    font-size: 15px;
+    text-transform: uppercase;
+}
+
+/*
+buttons
+*/
+
+.btn-header {
+    border-radius: 50%;
+    &[disabled] {
+        background: white;
+    }
+}
+
+.btn-confirm {
+    background: @bg_color_dark;
+    border-radius: 3px;
+    color: @text_color_ligth;
+    margin: auto;
+    text-transform: uppercase;
+    width: 90%;
 }

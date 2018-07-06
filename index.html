@@ -15,6 +15,148 @@
 
 </head>
 <body>
-    
+    <header>
+        <button type="button" class="btn btn-sm btn-header">1</button>
+        <button type="button" class="btn btn-sm btn-header">2</button>
+        <span>Vehicle(s)</span>
+        <button type="button" class="btn btn-sm btn-header" disabled>3</button>
+        <button type="button" class="btn btn-sm btn-header" disabled>4</button>
+        <button type="button" class="btn btn-sm btn-header" disabled>5</button>
+    </header>
+
+    <main>
+        <div class="content">
+            <section class=info>
+                <div class="info-header">
+                    <span>trip</span>
+                    <span class="glyphicon glyphicon-pencil"></span>
+                </div>
+                <div class="info-content">
+                    Vancouver <span></span> Victoria
+                </div>
+            </section>
+            
+            <section>
+                <!-- @source https://getbootstrap.com/docs/4.0/components/collapse/ -->
+                <div id="accordion">
+                    <div class="card">
+                      <div class="card-header" id="headingOne"  data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                        <h2 class="mb-0">
+                          <button class="btn btn-link">
+                            Standard and oversized <span class="glyphicon glyphicon-plus"></span>
+                          </button>
+                        </h2>
+                      </div>
+                  
+                      <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+                        <div class="card-body">
+                          Standard vehicle under 5,500kg
+                          <h3>Vehicle height <span class="glyphicon glyphicon-info-sign"></span></h3>
+                          <!-- @ source https://getbootstrap.com/docs/4.0/components/forms/ -->
+                          <form>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                                <label class="form-check-label" for="exampleRadios1">
+                                Under 7ft
+                                </label>
+                            </div>
+                          </form>
+                          <h3>Vehicle length <span class="glyphicon glyphicon-info-sign"></span></h3>
+                            <form>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                                    <label class="form-check-label" for="exampleRadios1">
+                                        Under 20ft
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+                                    <label class="form-check-label" for="exampleRadios2">
+                                        Over 20ft
+                                    </label>
+                                </div>
+                            </form>
+                            <form>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                    <label class="form-check-label" for="defaultCheck1">
+                                        dangerous goods
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck2">
+                                    <label class="form-check-label" for="defaultCheck2">
+                                        livestock
+                                    </label>
+                                </div>
+                            </form>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- motorcycle card -->
+                    <div class="card">
+                      <div class="card-header" id="headingTwo">
+                        <h5 class="mb-0">
+                          <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            Motorcycle <span class="glyphicon glyphicon-plus"></span>
+                          </button>
+                        </h5>
+                      </div>
+                      <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                        <div class="card-body">
+                            motorcycle
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- Over 5,500kg -->
+                    <div class="card">
+                        <div class="card-header" id="headingThree">
+                            <h5 class="mb-0">
+                            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                Over 5,500kg  <span class="glyphicon glyphicon-plus"></span>
+                            </button>
+                            </h5>
+                        </div>
+                        <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                            <div class="card-body">
+                                Over 5,500kg 
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Bus -->
+                    <div class="card">
+                        <div class="card-header" id="headingFour">
+                            <h5 class="mb-0">
+                            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                Bus  <span class="glyphicon glyphicon-plus"></span>
+                            </button>
+                            </h5>
+                        </div>
+                        <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordion">
+                            <div class="card-body">
+                                Bus
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+            </section>
+
+            <section class="confirm-content">
+                    <form>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                            <label class="form-check-label" for="defaultCheck1">
+                                Returning...
+                            </label>
+                        </div>
+                    </form>
+                    <button type="submit" class="btn btn-confirm">Confirm</button>
+
+            </section>
+        </div>
+    </main>
 </body>
 </html>
